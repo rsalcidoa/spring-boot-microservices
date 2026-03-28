@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import mx.rsalcidoa.course.dto.CourseDTO;
 import mx.rsalcidoa.course.entity.Course;
+import mx.rsalcidoa.course.http.response.StudentsByCourseIdResponse;
 import mx.rsalcidoa.course.service.ICourseService;
 
 @RestController
@@ -57,5 +58,10 @@ public class CourseController {
 								.teacher(course.getTeacher())
 								.build();
 		return ResponseEntity.ok(courseDTO);
+	}
+	
+	@GetMapping("/findStudents/{idCourse}")
+	public ResponseEntity<StudentsByCourseIdResponse> findStudentsByCourseId(@PathVariable Long idCourse) {
+		return ResponseEntity.ok(courseService.findStudentsByCourseId(idCourse));
 	}
 }

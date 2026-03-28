@@ -1,0 +1,5 @@
+INSERT INTO STUDENT (NAME, LAST_NAME, EMAIL, COURSE_ID) VALUES ('Roberto', 'Salcido', 'rsalcido@mail.com', 1)
+INSERT INTO STUDENT (NAME, LAST_NAME, EMAIL, COURSE_ID) VALUES ('Jon', 'Smith', 'jsmith@mail.com' ,1)
+INSERT INTO STUDENT (NAME, LAST_NAME, EMAIL, COURSE_ID) VALUES ('Jane', 'Doe', 'jdoe@mail.com', 2)
+INSERT INTO STUDENT (NAME, LAST_NAME, EMAIL, COURSE_ID) VALUES ('Fred', 'Bloggs', 'fbloggs@mail.com', 2)
+INSERT INTO STUDENT (NAME, LAST_NAME, EMAIL, COURSE_ID) VALUES ('Ann', 'Otter', 'aotter@mail.com', 3)
