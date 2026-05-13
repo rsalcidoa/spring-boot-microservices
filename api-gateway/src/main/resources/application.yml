@@ -1,23 +1,6 @@
-server:
-  port: 8080
-
 spring:
   application:
-    name: mcsv-api-gateway
-  cloud:
-    gateway:
-      discovery:
-        locator:
-          enabled: true
-      routes:
-        - id: students
-          uri: http://localhost:9080
-          predicates:
-            - Path=/api/v1/student/**
-        - id: courses
-          uri: http://localhost:9090
-          predicates:
-            - Path=/api/v1/course/**
+    name: msvc-api-gateway
   config:
     import:
     - optional:configserver:http://localhost:8888
