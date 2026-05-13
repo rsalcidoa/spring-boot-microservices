@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 
 import mx.rsalcidoa.course.dto.StudentDTO;
 
-@FeignClient(name = "msvc-student", url = "http://localhost:9080/api/v1/student")
+@FeignClient(name = "msvc-student", url = "http://localhost:8080/api/v1/student")
 public interface IStudentClient {
 
 	@GetMapping("/findByCourseId/{courseId}")
